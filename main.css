@@ -1,0 +1,80 @@
+/* This was a super challenging assignment for me, 
+after hitting dead-ends and roadblocks to finish the final phase, I relied on internet research and a lot of experimenting to make this work on my screen. FlexBox and media queries are some areas I need to continuosly study*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
+}
+
+a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+
+a:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.flex-nav ul {
+  display: flex;
+  border: 1px solid black;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social {
+  width: 25%
+}
+
+li {
+  width: 50%;
+}
+
+
+@media all and (max-width: 1080px) {
+
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+
+  li {
+    width: 50%;
+  }
+
+  .social {
+    width: 25%;
+  }
+}
+
+@media all and (max-width:540px) {
+
+  li {
+    width: 100%;
+  }
+}
